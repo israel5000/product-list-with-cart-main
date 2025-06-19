@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.all{
+    margin: 3rem 1rem 3rem;
+}
+.add-to-cart{
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: wheat;
+    border: none;
+    /* box-shadow: 2px 2px 5px black; */
+    border-radius: 20px;
+    place-content: center;
+    position: relative;
+    top: 5px;
+    left: 12px;
+}
+.text{
+   position: relative; 
+   width: 180px; 
+   top: 5px; 
+   left: -30px;
+}
+.logo{
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    display: grid;
+    gap:10px;
+    grid-auto-columns: 1fr;
+    grid-template-areas: "0ne two three" "four five six" "seven eignt nine";
+    padding-block:2rem;
+    margin-top: 3rem;
+}
+.main:nth-child(1){
+    grid-template-areas: one;
+}
+.main:nth-child(2){
+    grid-template-areas: two;
+}
+.main:nth-child(3){
+    grid-template-areas: three;
+}
+.main:nth-child(4){
+    grid-template-areas: four;
+}
+.main:nth-child(5){
+    grid-template-areas: five;
+}
+.main:nth-child(6){
+    grid-template-areas: six;
+}
+.main:nth-child(7){
+    grid-template-areas: seven;
+}
+.main:nth-child(8){
+    grid-template-areas: eight;
+}
+.main:nth-child(9){
+    grid-template-areas: nine;
+}
+.first {
+  display: flex;              
+  justify-content: space-between;
+  gap: 5px;        
+  background-color: wheat;  
+  /* position: absolute;         */
+}
+
+.main-3 {
+  flex: 5;                    
+  background-color: #f5f5f5;    
+  /* background-color: aqua; */
+  padding: 50px;
+  border: none;
+  /* box-shadow: 2px 2px 5px black; */
+  border-radius: 10px;
+  /* position: absolute; */
+}
+
+.bg-second {
+  border: none;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 5px black; */
+  /* background-color: aqua; */
+  background-color: #f5f5f5;
+  flex: 2;                        
+  padding: 20px;
+  border-radius: 10px;
+  width: 20%;
+  /* position: fixed;
+  right: 0%;
+  top: 10%; */
+  bottom: 0%;
+}
+
+.text{
+    position: relative;
+
+}
+.each{
+    padding: 2rem;
+    margin-left: -30px;
+    border: none;
+    border-radius: 10px;
+    /* box-shadow: 2px 2px 5px black; */
+    width: 200px;
+    height: 260px;
+    background-color: hsl(13, 31%, 94%);
+    /* margin: 5px; */
+    position: relative;
+    /* background-color: aqua; */
+}
+.cost{
+    color: hsl(14, 86%, 42%);
+}
+.each-1{
+    padding: 2rem;
+    border: none;
+    /* box-shadow: 2px 2px 5px black; */
+    width: 200px;
+    height: 300px;
+    background-color: hsl(13, 31%, 94%);
+}
+.desert{
+    margin: 10px 8px 5px;
+}
+h2{
+    font-size: 20px;
+}
+.name{
+    color: hsl(7, 20%, 60%);
+}
+.your-cart{
+    margin: 3px 6px;
+    text-align: right;
+    color: hsl(14, 86%, 42%);
+}
+.images{
+    margin: -32px;
+}
+.picture{
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+}
+.add-to-cart::before{
+    content: url(/assets/images/icon-add-to-cart.svg);
+}
+.button-item{
+   position: absolute;
+    top: 5px;
+    display: inline-block;
+    
+}
