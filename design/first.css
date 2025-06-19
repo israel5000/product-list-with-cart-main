@@ -88,7 +88,7 @@
     border-radius: 10px;
     box-shadow: 2px 2px 5px black;
     width: 220px;
-    height: 300px;
+    min-height: 300px;
     background-color: hsl(13, 31%, 94%);
     /* margin: 5px; */
     position: relative;
@@ -120,7 +120,7 @@ h2{
 }
 .picture{
     width: 180px;
-    height: 150px;
+    min-height: 150px;
     border-radius: 10px;
 }
 .add-to-cart::before{

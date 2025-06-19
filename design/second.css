@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .all{
-    margin: 3rem 1rem 3rem;
+    margin: 3rem 3rem 3rem;
 }
 .desert{
     margin: 10px 8px 5px;
@@ -14,7 +14,7 @@
     padding: 3px 8px;
     background-color: wheat;
     border: none;
-    box-shadow: 2px 2px 5px black;
+    /* box-shadow: 2px 2px 5px black; */
     border-radius: 20px;
     position: relative;
     top: -15px;
@@ -25,19 +25,30 @@
 }
 .cost{
     color: hsl(14, 86%, 42%);
+    font-size: 25px;
 }   
+.main-name{
+    font-size: 25px;
+}
+.logo{
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.name{
+    font-size: 25px;
+}
 .picture{
-    width: 200px;
-    height: 180px;
+    width: 290px;
+    min-height: 240px;
     border-radius: 10px;
 }
 .each{
     padding: 2rem;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 2px 5px black;
-    width: 250px;
-    height: 300px;
+    /* box-shadow: 2px 2px 5px black; */
+    width: 300px;
+    min-height: 280px;
     background-color: hsl(13, 31%, 94%);
     margin: 40px 3px;
     position: relative;
@@ -45,13 +56,13 @@
 .each-1{
     padding: 2rem;
     border: none;
-    box-shadow: 2px 2px 5px black;
-    width: 260px;
+    /* box-shadow: 2px 2px 5px black; */
+    width: 290px;
     height: 260px;
     background-color: hsl(13, 31%, 94%);
 }
 h2{
-    font-size: 20px;
+    font-size: 30px;
 }
 .name{
     color: hsl(7, 20%, 60%);
