@@ -9,33 +9,43 @@
 .add-to-cart{
     display: inline-block;
     padding: 5px 10px;
-    background-color: wheat;
+    background-color: hsl(13, 31%, 94%);
     border: none;
     /* box-shadow: 2px 2px 5px black; */
     border-radius: 20px;
-    place-content: center;
+    place-items: center;
     position: relative;
     top: 5px;
-    left: 12px;
+    left: 15px;
+}
+.add-to-cart:hover{
+    background-color: hsl(13, 31%, 94%);
+}
+p{
+    padding: 2px;
 }
 .text{
    position: relative; 
    min-width: 180px; 
-   top: 5px; 
+   top: 10px; 
    left: -30px;
 }
 .logo{
-    font-size: 25px;
+    font-size: 35px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
 }
 .main{
     display: grid;
-    gap:10px;
-    grid-auto-columns: 1fr;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(230px,1fr));
     grid-template-areas: "one two three" "four five six" "seven eignt nine";
     padding-block:2rem;
     margin-top: 3rem;
 }
+/* .each:hover{
+    background-color: hsl(14, 25%, 72%);
+} */
 .main:nth-child(1){
     grid-template-areas: one;
 }
@@ -67,14 +77,14 @@
   display: flex;              
   justify-content: space-between;
   gap: 5px;        
-  background-color: wheat;  
+  background-color: white;  
   /* position: absolute;         */
 }
 
 .main-3 {
-  flex: 5;                        
+  flex: 3;                        
   /* background-color: aqua; */
-  padding: 50px;
+  /* padding: 50px; */
   border: none;
   /* box-shadow: 2px 2px 5px black; */
   border-radius: 10px;
@@ -103,12 +113,10 @@
 } */
 .each{
     padding: 2rem;
-    margin-left: 25px;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px black;
-    width: 200px;
-    height: 220px;
+    /* border-radius: 10px;
+    box-shadow: 2px 2px 5px black; */
+    width: 220px;
+    height: 320px;
     background-color: hsl(13, 31%, 94%);
     /* margin: 5px; */
     position: relative;
@@ -143,8 +151,8 @@ h2{
     margin: -32px;
 }
 .picture{
-    min-width: 200px;
-    height: 150px;
+    width: 220px;
+    height: 230px;
     border-radius: 10px;
 }
 .add-to-cart::before{
@@ -157,7 +165,7 @@ h2{
     
 }
 
-@media (max-width:1000px){
+@media (max-width:950px){
     .add-to-cart{
         top: 11px;
         left: 4px;
@@ -180,18 +188,19 @@ h2{
         top: 20px;
     }
     .each{
-        width: 180px;
-        height: 250px;
+        width: 230px;
+        height: 300px;
     }
     .picture{
-        min-width: 180px;
+        height: 220px;
+        width: 230px;
     }
     .your-cart{
         text-align: start;
     }
     
 }
-@media (max-width:600px){
+@media (max-width:550px){
     .add-to-cart{
         padding: 3px 8px;
         top: -15px;
@@ -232,9 +241,10 @@ h2{
         display: inline-block;
     }
     .main{
-        margin-left: 20px;
+        /* margin-left: 5px; */
         gap:5rem;
-        grid-auto-columns: 1fr 1fr;
+        place-items: center;
+        grid-auto-columns:1fr;
         grid-template-areas: "one" "two" "three" "four" "five" "six" "seven" "eight" "nine";
     }
     .first {
